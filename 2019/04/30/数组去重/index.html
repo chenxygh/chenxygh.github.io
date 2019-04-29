@@ -96,13 +96,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Blog">
-<meta property="og:url" content="http://yoursite.com/tags/数组下标法/index.html">
+  <meta name="description" content="28 号面试，有个数组去重的问题。当时太紧张，没细想，就给了个嵌套遍历的算法。 29 号吃着饭，突然想起几个解决方案，现在先记录下想法，有时间了再研究。 实际上，数组去重，非连续重复的元素，可以先进行排序，变成连续重复元素，再遍历一遍，去重。 由此，比 O(N^2) 要好多，O(NLOGN + N) 再者，假如整个数组是数字元素，且数字大小的范围可控且不是很大，如 0-1000，或者 0-100，">
+<meta name="keywords" content="算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组去重">
+<meta property="og:url" content="http://yoursite.com/2019/04/30/数组去重/index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="28 号面试，有个数组去重的问题。当时太紧张，没细想，就给了个嵌套遍历的算法。 29 号吃着饭，突然想起几个解决方案，现在先记录下想法，有时间了再研究。 实际上，数组去重，非连续重复的元素，可以先进行排序，变成连续重复元素，再遍历一遍，去重。 由此，比 O(N^2) 要好多，O(NLOGN + N) 再者，假如整个数组是数字元素，且数字大小的范围可控且不是很大，如 0-1000，或者 0-100，">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-04-29T16:11:31.699Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog">
+<meta name="twitter:title" content="数组去重">
+<meta name="twitter:description" content="28 号面试，有个数组去重的问题。当时太紧张，没细想，就给了个嵌套遍历的算法。 29 号吃着饭，突然想起几个解决方案，现在先记录下想法，有时间了再研究。 实际上，数组去重，非连续重复的元素，可以先进行排序，变成连续重复元素，再遍历一遍，去重。 由此，比 O(N^2) 要好多，O(NLOGN + N) 再者，假如整个数组是数字元素，且数字大小的范围可控且不是很大，如 0-1000，或者 0-100，">
 
 
 
@@ -110,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/tags/数组下标法/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/30/数组去重/">
 
 
 
@@ -120,7 +125,7 @@
   };
 </script>
 
-  <title>Tag: 数组下标法 | Blog</title>
+  <title>数组去重 | Blog</title>
   
 
 
@@ -168,7 +173,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -223,7 +228,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -299,80 +304,203 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>数组下标法<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/30/数组去重/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chenxy">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2019/04/27/数组下标法的几道题目/" itemprop="url">
-            
-              <span itemprop="name">数组下标法的几道题目</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">数组去重
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-27T20:42:36+08:00" content="2019-04-27">
-          04-27
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-30 00:00:53 / Modified: 00:11:31" itemprop="dateCreated datePublished" datetime="2019-04-30T00:00:53+08:00">2019-04-30</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>28 号面试，有个数组去重的问题。当时太紧张，没细想，就给了个嵌套遍历的算法。</p>
+<p>29 号吃着饭，突然想起几个解决方案，现在先记录下想法，有时间了再研究。</p>
+<p>实际上，数组去重，非连续重复的元素，可以先进行排序，变成连续重复元素，再遍历一遍，去重。</p>
+<p>由此，比 O(N^2) 要好多，O(NLOGN + N)</p>
+<p>再者，假如整个数组是数字元素，且数字大小的范围可控且不是很大，如 0-1000，或者 0-100，这样的范围是可以接收的。可以使用最近自己常用的空间换时间，直接开辟个数字范围大小的数组，然后遍历一遍原数组，指定位置给 1。最后再遍历遍结果数组，去掉 0 项，或者不去掉也可以，反正这样的时间复杂度只有 0(N) 级别。</p>
+<p>再然后，有这个思想，延伸到 js 中，可以使用对象的属性，伪数组的形式，把数字元素作为对象的属性，然后，使用的时候，判断这个属性是否存在就可以知道是否有这个元素。也完成了去重。</p>
+<p>这些是我个人浅显的想法，具体实现等细节，之后再详述。</p>
+<p>想必会有更加完善的做法，之后再上网研究。</p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/算法/" rel="tag"># 算法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/27/数组下标法的几道题目/" rel="next" title="数组下标法的几道题目">
+                <i class="fa fa-chevron-left"></i> 数组下标法的几道题目
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -635,6 +763,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
 
   
 
@@ -650,6 +782,8 @@
 
   
 
+
+  
 
 
   
