@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="数组下标的灵活应用（空间换时间）数组在算法里面的运用十分广泛，而运用数组下标进行查找，时间复杂度仅为 O(1). 所以，有的时候，灵活使用数组，反而更省时间和空间。  PAT (Basic Level) Practice 1038 统计同成绩学生 本题要求读入 N 名学生的成绩，将获得某一给定分数的学生人数输出。 输入格式：输入在第 1 行给出不超过 10^5 的正整数 N，即学生总人数。随后一行">
-<meta name="keywords" content="C,算法,数组">
+  <meta name="description" content="箭头函数的 this箭头函数不能自己创建 this，它会从作用域链上向上找一个 this 所以，call apply bind 在传第一个参数的时候，无效，会被忽略 切记这一点！ MDN">
+<meta name="keywords" content="前端,ES6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数组下标的灵活应用（空间换时间）">
-<meta property="og:url" content="http://yoursite.com/2019/04/26/数组下标的灵活应用（空间换时间）/index.html">
+<meta property="og:title" content="箭头函数的 this">
+<meta property="og:url" content="http://yoursite.com/2019/05/10/箭头函数的-this/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="数组下标的灵活应用（空间换时间）数组在算法里面的运用十分广泛，而运用数组下标进行查找，时间复杂度仅为 O(1). 所以，有的时候，灵活使用数组，反而更省时间和空间。  PAT (Basic Level) Practice 1038 统计同成绩学生 本题要求读入 N 名学生的成绩，将获得某一给定分数的学生人数输出。 输入格式：输入在第 1 行给出不超过 10^5 的正整数 N，即学生总人数。随后一行">
+<meta property="og:description" content="箭头函数的 this箭头函数不能自己创建 this，它会从作用域链上向上找一个 this 所以，call apply bind 在传第一个参数的时候，无效，会被忽略 切记这一点！ MDN">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-04-26T13:28:58.897Z">
+<meta property="og:updated_time" content="2019-05-10T07:35:36.171Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数组下标的灵活应用（空间换时间）">
-<meta name="twitter:description" content="数组下标的灵活应用（空间换时间）数组在算法里面的运用十分广泛，而运用数组下标进行查找，时间复杂度仅为 O(1). 所以，有的时候，灵活使用数组，反而更省时间和空间。  PAT (Basic Level) Practice 1038 统计同成绩学生 本题要求读入 N 名学生的成绩，将获得某一给定分数的学生人数输出。 输入格式：输入在第 1 行给出不超过 10^5 的正整数 N，即学生总人数。随后一行">
+<meta name="twitter:title" content="箭头函数的 this">
+<meta name="twitter:description" content="箭头函数的 this箭头函数不能自己创建 this，它会从作用域链上向上找一个 this 所以，call apply bind 在传第一个参数的时候，无效，会被忽略 切记这一点！ MDN">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/26/数组下标的灵活应用（空间换时间）/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/10/箭头函数的-this/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>数组下标的灵活应用（空间换时间） | Blog</title>
+  <title>箭头函数的 this | Blog</title>
   
 
 
@@ -324,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/26/数组下标的灵活应用（空间换时间）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/10/箭头函数的-this/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chenxy">
@@ -341,7 +341,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">数组下标的灵活应用（空间换时间）
+          <h1 class="post-title" itemprop="name headline">箭头函数的 this
 
               
             
@@ -367,7 +367,7 @@
                 
               
 
-              <time title="Created: 2019-04-26 20:53:59 / Modified: 21:28:58" itemprop="dateCreated datePublished" datetime="2019-04-26T20:53:59+08:00">2019-04-26</time>
+              <time title="Created: 2019-05-10 15:17:06 / Modified: 15:35:36" itemprop="dateCreated datePublished" datetime="2019-05-10T15:17:06+08:00">2019-05-10</time>
             
 
             
@@ -424,45 +424,10 @@
       
 
       
-        <h1 id="数组下标的灵活应用（空间换时间）"><a href="#数组下标的灵活应用（空间换时间）" class="headerlink" title="数组下标的灵活应用（空间换时间）"></a>数组下标的灵活应用（空间换时间）</h1><p>数组在算法里面的运用十分广泛，而运用数组下标进行查找，时间复杂度仅为 O(1).</p>
-<p>所以，有的时候，灵活使用数组，反而更省时间和空间。</p>
-<ul>
-<li><p><strong>PAT (Basic Level) Practice 1038</strong> <strong>统计同成绩学生</strong></p>
-<p>本题要求读入 <em>N</em> 名学生的成绩，将获得某一给定分数的学生人数输出。</p>
-<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入在第 1 行给出不超过 10^5 的正整数 <em>N</em>，即学生总人数。随后一行给出 <em>N</em> 名学生的百分制整数成绩，中间以空格分隔。最后一行给出要查询的分数个数 <em>K</em>（不超过 <em>N</em> 的正整数），随后是 <em>K</em> 个分数，中间以空格分隔。</p>
-<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>在一行中按查询顺序给出得分等于指定分数的学生人数，中间以空格分隔，但行末不得有多余空格。</p>
-<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">10</span><br><span class="line">60 75 90 55 75 99 82 90 75 50</span><br><span class="line">3 75 90 88</span><br></pre></td></tr></table></figure>
-<h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3 2 0</span><br></pre></td></tr></table></figure>
-<p>这道题，很容易的想到，所有分数和指定分数两个数组，然后循环套循环，这样 时间最大 O(N^2), 空间最大 O(2 * 10^5)</p>
-<p>最后一个测试点不会通过。</p>
-<p>而换个角度，百分制整数，0 - 100， 如果作为数组下标，然后对应位置的元素作为该分数出现的次数，那么最终，在查找时，时间 O(1), 空间 O(101).</p>
-<p>极大程度地减少了查找所需要的消耗。而空间每一次也不过是固定的101.</p>
-<p><a href="https://github.com/chenxygh/pat/blob/master/pat_basic/code/1038.c" target="_blank" rel="noopener">code</a></p>
-</li>
-<li><p><strong>PAT (Basic Level) Practice 1047</strong> <strong>编程团体赛</strong></p>
-<p>编程团体赛的规则为：每个参赛队由若干队员组成；所有队员独立比赛；参赛队的成绩为所有队员的成绩和；成绩最高的队获胜。</p>
-<p>现给定所有队员的比赛成绩，请你编写程序找出冠军队。</p>
-<h3 id="输入格式：-1"><a href="#输入格式：-1" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入第一行给出一个正整数 <em>N</em>（≤104），即所有参赛队员总数。随后 <em>N</em> 行，每行给出一位队员的成绩，格式为：<code>队伍编号-队员编号 成绩</code>，其中<code>队伍编号</code>为 1 到 1000 的正整数，<code>队员编号</code>为 1 到 10 的正整数，<code>成绩</code>为 0 到 100 的整数。</p>
-<h3 id="输出格式：-1"><a href="#输出格式：-1" class="headerlink" title="输出格式："></a>输出格式：</h3><p>在一行中输出冠军队的编号和总成绩，其间以一个空格分隔。注意：题目保证冠军队是唯一的。</p>
-<h3 id="输入样例：-1"><a href="#输入样例：-1" class="headerlink" title="输入样例："></a>输入样例：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">6</span><br><span class="line">3-10 99</span><br><span class="line">11-5 87</span><br><span class="line">102-1 0</span><br><span class="line">102-3 100</span><br><span class="line">11-9 89</span><br><span class="line">3-2 61</span><br></pre></td></tr></table></figure>
-<h3 id="输出样例：-1"><a href="#输出样例：-1" class="headerlink" title="输出样例："></a>输出样例：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">11 176</span><br></pre></td></tr></table></figure>
-<p>本题同样可以使用数组下标法，把队伍编号作为数组下标，对应元素作为该组的得分，每次输入就在对应位置上加上分数，判断最大值。</p>
-<p>而空间 O(1001) 为固定，时间 O(N)，N 为成绩条数。</p>
-<p>使用空间换时间。</p>
-<p><a href="https://github.com/chenxygh/pat/blob/master/pat_basic/code/1047.c" target="_blank" rel="noopener">code</a></p>
-</li>
-<li><p><strong>PAT (Basic Level) Practice 1010</strong> <strong>一元多项式求导</strong></p>
-<p>设计函数求一元多项式的导数。（注：<em>x**n</em>（<em>n</em>为整数）的一阶导数为<em>n<strong>x</strong>n</em>−1。）</p>
-<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>以指数递降方式输入多项式非零项系数和指数（绝对值均为不超过 1000 的整数）。数字间以空格分隔。</p>
-<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>以与输入相同的格式输出导数多项式非零项的系数和指数。数字间以空格分隔，但结尾不能有多余空格。注意“零多项式”的指数和系数都是 0，但是表示为 <code>0 0</code>。</p>
-<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3 4 -5 2 6 1 -2 0</span><br></pre></td></tr></table></figure>
-<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">12 3 -10 1 6 0</span><br></pre></td></tr></table></figure>
-<p>实际上，多项式的表示，就可以使用数组，数组下标作为 expo，对应元素作为 coef.</p>
-<p>不单单是求导，如加法 乘法等，都可以类似简化运算。</p>
-<p>而传统的，使用链表表示一个多项式，很是麻烦。</p>
-<p><a href="https://github.com/chenxygh/pat/blob/master/pat_basic/code/1010.c" target="_blank" rel="noopener">code</a></p>
-</li>
-</ul>
+        <h1 id="箭头函数的-this"><a href="#箭头函数的-this" class="headerlink" title="箭头函数的 this"></a>箭头函数的 this</h1><p>箭头函数不能自己创建 this，它会从作用域链上向上找一个 this</p>
+<p>所以，call apply bind 在传第一个参数的时候，无效，会被忽略</p>
+<p>切记这一点！</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener">MDN</a></p>
 
       
     </div>
@@ -486,11 +451,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/C/" rel="tag"># C</a>
+            <a href="/tags/前端/" rel="tag"># 前端</a>
           
-            <a href="/tags/算法/" rel="tag"># 算法</a>
-          
-            <a href="/tags/数组/" rel="tag"># 数组</a>
+            <a href="/tags/ES6/" rel="tag"># ES6</a>
           
         </div>
       
@@ -503,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/25/jQuery-实现任意位置的锚点定位/" rel="next" title="jQuery 实现任意位置的锚点定位">
-                <i class="fa fa-chevron-left"></i> jQuery 实现任意位置的锚点定位
+              <a href="/2019/05/07/移动端轮播图的思路/" rel="next" title="移动端轮播图的思路">
+                <i class="fa fa-chevron-left"></i> 移动端轮播图的思路
               </a>
             
           </div>
@@ -512,10 +475,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/27/数组下标法的几道题目/" rel="prev" title="数组下标法的几道题目">
-                数组下标法的几道题目 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -702,7 +661,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数组下标的灵活应用（空间换时间）"><span class="nav-number">1.</span> <span class="nav-text">数组下标的灵活应用（空间换时间）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.0.1.</span> <span class="nav-text">输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">1.0.2.</span> <span class="nav-text">输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">1.0.3.</span> <span class="nav-text">输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">1.0.4.</span> <span class="nav-text">输出样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式：-1"><span class="nav-number">1.0.5.</span> <span class="nav-text">输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式：-1"><span class="nav-number">1.0.6.</span> <span class="nav-text">输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例：-1"><span class="nav-number">1.0.7.</span> <span class="nav-text">输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例：-1"><span class="nav-number">1.0.8.</span> <span class="nav-text">输出样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式"><span class="nav-number">1.0.9.</span> <span class="nav-text">输入格式:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式"><span class="nav-number">1.0.10.</span> <span class="nav-text">输出格式:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例"><span class="nav-number">1.0.11.</span> <span class="nav-text">输入样例:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例"><span class="nav-number">1.0.12.</span> <span class="nav-text">输出样例:</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#箭头函数的-this"><span class="nav-number">1.</span> <span class="nav-text">箭头函数的 this</span></a></li></ol></div>
             
 
           </div>
